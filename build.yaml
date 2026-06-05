@@ -2,7 +2,7 @@ include:
   # Левая половина (SuperMini)
   - board: nrf52840dongle_nrf52840
     shield: charybdis_left
-    keymap: default
+    keymap: qwerty
   # Правая половина (SuperMini)
   - board: nrf52840dongle_nrf52840
     shield: charybdis_right
