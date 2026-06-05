@@ -1,12 +1,21 @@
+board: [ nice_nano//zmk ]
+
 include:
-  # Левая половина (SuperMini)
-  - board: nrf52840dongle_nrf52840
-    shield: charybdis_left
-    keymap: qwerty
-  # Правая половина (SuperMini)
-  - board: nrf52840dongle_nrf52840
-    shield: charybdis_right
-    keymap: qwerty
-  # Утилита для сброса настроек (всегда полезно иметь)
-  - board: nrf52840dongle_nrf52840
+
+# ── Reset Firmware ────────────────────────────────────────────────────────────
+  - name: settings_reset
+    board: nice_nano//zmk
     shield: settings_reset
+
+# ── Bluetooth (BT) Firmwares ─────────────────────────────────────────────────────────────
+  - name: bt
+    board: nice_nano//zmk
+    shield:
+      - charybdis_left_bt
+      - charybdis_right_bt
+    keymap:
+      - qwerty
+      - colemak_dh
+      # - canary
+      # - focal
+      # - graphite
