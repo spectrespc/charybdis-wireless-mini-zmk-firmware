@@ -6,7 +6,7 @@ include:
   # Правая половина (SuperMini)
   - board: nrf52840dongle_nrf52840
     shield: charybdis_right
-    keymap: default
+    keymap: qwerty
   # Утилита для сброса настроек (всегда полезно иметь)
   - board: nrf52840dongle_nrf52840
     shield: settings_reset
